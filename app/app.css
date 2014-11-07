@@ -1,0 +1,321 @@
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic");
+
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+body
+{
+  background: #F8F8F8;
+}
+
+body.is-loading *
+{
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
+body,input,textarea,select
+{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 17pt;
+  line-height: 1.75em;
+  color: #888;
+  -webkit-text-stroke: 0.1px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  color: #666;
+  margin: 0 0 1em 0;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6
+{
+  color: #fff;
+}
+
+strong, b
+{
+  font-weight: 400;
+  color: inherit;
+}
+
+.dark strong, .dark b
+{
+  color: #fff;
+  color: rgba(255,255,255,0.85);
+}
+
+em, i
+{
+  font-style: italic;
+}
+
+a
+{
+  color: inherit;
+  text-decoration: none;
+  /*border-bottom: dotted 1px rgba(0,0,0,0.25);*/
+  -moz-transition: border-bottom-color 0.25s ease-in-out;
+  -webkit-transition: border-bottom-color 0.25s ease-in-out;
+  -o-transition: border-bottom-color 0.25s ease-in-out;
+  -ms-transition: border-bottom-color 0.25s ease-in-out;
+  transition: border-bottom-color 0.25s ease-in-out;
+}
+
+a:hover
+{
+  border-bottom-color: rgba(0,0,0,0);
+}
+
+.dark a
+{
+  color: #fff;
+  /*border-bottom-color: rgba(255,255,255,0.5);*/
+  border-bottom-color: #ffffff;
+}
+
+.dark a:hover
+{
+  /*border-bottom-color: rgba(255,255,255,0);*/
+  border-bottom-color: #ffffff;
+}
+
+sub
+{
+  position: relative;
+  top: 0.5em;
+  font-size: 0.8em;
+}
+
+sup
+{
+  position: relative;
+  top: -0.5em;
+  font-size: 0.8em;
+}
+
+hr
+{
+  border: 0;
+  border-top: solid 1px #e6e6e6;
+  margin: 2em 0 2em 0;
+}
+
+.dark hr
+{
+  border-top-color: rgba(255,255,255,0.5);
+}
+
+blockquote
+{
+  border-left: solid 0.25em #e6e6e6;
+  padding: 1em 0 1em 2em;
+  font-style: italic;
+}
+
+.dark blockquote
+{
+  border-left-color: rgba(255,255,255,0.5);
+}
+
+p, ul, ol, dl, table
+{
+  margin-bottom: 1em;
+}
+
+p
+{
+  text-align: justify;
+}
+
+header
+{
+  margin-bottom: 1em;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6
+{
+  margin: 0;
+}
+
+header p
+{
+  display: block;
+  margin: 0;
+  padding: 0.25em 0 0.5em 0;
+}
+
+footer
+{
+  padding-top: 1.5em;
+}
+
+br.clear
+{
+  clear: both;
+}
+
+.featured
+{
+  text-align: center;
+}
+
+.featured p
+{
+  text-align: center;
+}
+
+/* Sections/Article */
+
+section,
+article
+{
+  margin-bottom: 3em;
+}
+
+section > :last-child,
+article > :last-child
+{
+  margin-bottom: 0;
+}
+
+section:last-child,
+article:last-child
+{
+  margin-bottom: 0;
+}
+
+.row > section,
+.row > article
+{
+  margin-bottom: 0;
+}
+
+
+
+/*********************************************************************************/
+/* Icons                                                                         */
+/*********************************************************************************/
+
+.icon {
+  text-decoration: none;
+}
+
+.icon:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 1.25em;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.icon > .label {
+  display: none;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header
+{
+  position: relative;
+  margin: 0;
+  background-image:			url('overlay.png'),			url('header.jpg');
+  background-size:			auto,								cover;
+  background-position:		top left,							center center;
+  background-repeat:			repeat,								no-repeat;
+  padding: 6em 0 6em 0;
+  text-align: center;
+  color: #fff;
+}
+
+#header header
+{
+}
+
+#header header h1
+{
+  font-size: 2.25em;
+  line-height: 1.25em;
+  margin-bottom: 0;
+}
+
+#header header p
+{
+  margin-top: 1.25em;
+  font-weight: 100;
+  padding: 0;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+#header footer
+{
+  padding-top: 1.5em;
+}
+
+
+/****************************************************************************************************************
+/* Button
+/****************************************************************************************************************/
+.myButton {
+	background-color:transparent;
+	/*-moz-border-radius:41px;*/
+	/*-webkit-border-radius:41px;*/
+	border-radius:41px;
+	border:2px solid #ffffff;
+	/*display:inline-block;*/
+	/*cursor:pointer;*/
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	padding:6px 66px;
+	/*text-decoration:none;*/
+	/*text-shadow:0px 1px 0px #576355;*/
+}
+.myButton:hover {
+	background-color:transparent;
+    border-color: #ffffff;
+}
+.myButton:active {
+	position:relative;
+    border-color: #ffffff;
+    top:1px;
+}
